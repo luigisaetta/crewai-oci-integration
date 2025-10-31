@@ -12,6 +12,8 @@ Before running the demos, you must configure access credentials for OCI.
 In these examples, we use a **locally stored key pair** for authentication.  
 Ensure your local OCI configuration (`~/.oci/config` and private key) is correctly set up and accessible to the Python SDK.
 
+In addition, you should be **enabled** to use OCI Generative AI Service in your tenant. If you haven't yet used OCI GenAI ask to your tenant's admin to setup the **needed policies**.
+
 ---
 
 ## 🧩 Demos Included
