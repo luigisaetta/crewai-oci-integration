@@ -36,7 +36,7 @@ The project relies on the following main packages:
 | **OCI Python SDK** | Access OCI services programmatically |
 | **LiteLLM (Gateway)** | OpenAI-compatible proxy for accessing OCI Generative AI models |
 
-To connect CrewAI to OCI models, we use a **LiteLLM gateway**, which exposes OCI GenAI via an OpenAI-compatible REST API.
+To connect CrewAI to OCI models, we use a **LiteLLM gateway**, which exposes OCI GenAI via an **OpenAI-compatible** REST API.
 
 ---
 
