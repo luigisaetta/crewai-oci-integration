@@ -18,7 +18,7 @@ In addition, you should be **enabled** to use OCI Generative AI Service in your 
 
 ## 🧩 Demos Included
 
-- **Simple CrewAI Agent** — basic CrewAI agent interacting with an LLM through OCI  
+- [Simple CrewAI Agent](./simple_test_crewai_agent.py) — basic CrewAI agent interacting with an LLM through OCI  
 - *(More demos to be added soon)*
 
 ---
