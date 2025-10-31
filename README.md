@@ -75,3 +75,24 @@ python simple_test_crewai_agent.py
 
 If the setup is correct, you should see the agent’s output using an OCI model.
 
+## Integrate Agents with **MCP** servers.
+Install this additional package:
+
+```
+pip install 'crewai-tools[mcp]'
+```
+
+You can test integration with **MCP** using [OCI Consumption report](./crew_agent_mcp02.py) that generates a report
+of the consumption in your tenant (top 5 compartments,for 4 weeks).
+To have this demo up&running:
+* download the code for the MCP server from [here](https://github.com/oracle-devrel/technology-engineering/blob/main/ai/gen-ai-agents/mcp-oci-integration/mcp_consumption.py)
+* start the MCP server, on a free port
+* register the URL, in [source](./crew_agent_mcp02.py), in the section:
+```
+server_params = {
+    "url": "http://localhost:9500/mcp",
+    "transport": "streamable-http"
+}
+```
+
+
