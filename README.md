@@ -47,7 +47,7 @@ conda create -n crewai python=3.11
 conda activate crewai
 ```
 
-3. Install the required packages
+3. **Install** the required **packages**
 ```
 pip install -U oci litellm "litellm[proxy]" crewai
 ```
