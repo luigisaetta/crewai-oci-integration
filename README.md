@@ -82,8 +82,8 @@ Install this additional package:
 pip install 'crewai-tools[mcp]'
 ```
 
-You can test integration with **MCP** using [OCI Consumption report](./crew_agent_mcp02.py) that generates a report
-of the consumption in your tenant (top 5 compartments,for 4 weeks).
+You can test the integration with **MCP** using [OCI Consumption report](./crew_agent_mcp02.py) that generates a report
+of the consumption in your tenant (top 5 compartments, for 4 weeks).
 To have this demo up&running:
 * download the code for the MCP server from [here](https://github.com/oracle-devrel/technology-engineering/blob/main/ai/gen-ai-agents/mcp-oci-integration/mcp_consumption.py)
 * start the MCP server, on a free port
