@@ -96,4 +96,9 @@ server_params = {
 }
 ```
 
+If you don't want to secure (with JWT) the communication with the MCP server, put 
+```
+ENABLE_JWT_TOKEN = False
+```
+in the config.py file.
 
