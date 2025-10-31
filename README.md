@@ -12,6 +12,8 @@ Before running the demos, you must configure access credentials for OCI.
 In these examples, we use a **locally stored key pair** for authentication.  
 Ensure your local OCI configuration (`~/.oci/config` and private key) is correctly set up and accessible to the Python SDK.
 
+To correctly start the **LiteLLM gateway** you need to create and configure correctly a **config.yml** file. To create this file use the [template](./config_template.yml).
+
 In addition, you should be **enabled** to use OCI Generative AI Service in your tenant. If you haven't yet used OCI GenAI ask to your tenant's admin to setup the **needed policies**.
 
 ---
