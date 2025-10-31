@@ -1,2 +1,72 @@
-# crewai-oci-integration
-This repo will contains instructions and examples to integrate crewAI with OCI GenAI models
+# CrewAI ↔ OCI Generative AI Integration
+
+This repository provides examples and configuration guidelines for integrating **[CrewAI](https://github.com/joaomdmoura/crewAI)** with **Oracle Cloud Infrastructure (OCI) Generative AI** services.  
+The goal is to demonstrate how CrewAI agents can seamlessly leverage OCI-hosted models through the **LiteLLM gateway**.
+
+---
+
+## 🔐 Security Configuration
+
+Before running the demos, you must configure access credentials for OCI.
+
+In these examples, we use a **locally stored key pair** for authentication.  
+Ensure your local OCI configuration (`~/.oci/config` and private key) is correctly set up and accessible to the Python SDK.
+
+---
+
+## 🧩 Demos Included
+
+- **Simple CrewAI Agent** — basic CrewAI agent interacting with an LLM through OCI  
+- *(More demos to be added soon)*
+
+---
+
+## 📦 Dependencies
+
+The project relies on the following main packages:
+
+| Dependency | Purpose |
+|-------------|----------|
+| **CrewAI** | Framework for creating multi-agent workflows |
+| **OCI Python SDK** | Access OCI services programmatically |
+| **LiteLLM (Gateway)** | OpenAI-compatible proxy for accessing OCI Generative AI models |
+
+To connect CrewAI to OCI models, we use a **LiteLLM gateway**, which exposes OCI GenAI via an OpenAI-compatible REST API.
+
+---
+
+## ⚙️ Environment Setup
+
+1. **Create a Conda environment**
+```bash
+conda create -n crewai python=3.11
+```
+
+2. **Activate** the environment
+```
+conda activate crewai
+```
+
+3. Install the required packages
+```
+pip install -U oci litellm "litellm[proxy]" crewai
+```
+
+4. Run the LiteLLM Gateway
+Start the LiteLLM gateway using your configuration file (config.yml):
+```
+./start_gateway.sh
+```
+
+Make sure the gateway starts successfully and is listening on the configured port (e.g., http://localhost:4000/v1).
+
+🧠 Test the Integration
+
+Run the sample CrewAI agent to verify that CrewAI can connect to OCI through LiteLLM:
+
+```
+python simple_test_crewai_agent.py
+```
+
+If the setup is correct, you should see the agent’s output using an OCI model.
+
