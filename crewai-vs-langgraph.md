@@ -82,7 +82,6 @@ Both frameworks address **enterprise-grade reliability, security, and compliance
 | Dynamic decision-making with branching logic | **LangGraph** |
 | Long-running or resumable workflows | **LangGraph** |
 | Rapid prototyping with non-developers | **CrewAI** |
-| High compliance / on-prem needs | **CrewAI Enterprise** |
 | Deep integration with LangChain ecosystem | **LangGraph** |
 | Auditable, multi-day processes | **LangGraph** |
 | Multi-agent orchestration with clear roles | **CrewAI** |
