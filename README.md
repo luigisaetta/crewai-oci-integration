@@ -3,6 +3,8 @@
 This repository provides examples and configuration guidelines for integrating **[CrewAI](https://github.com/joaomdmoura/crewAI)** with **Oracle Cloud Infrastructure (OCI) Generative AI** services.  
 The goal is to demonstrate how CrewAI agents can seamlessly leverage OCI-hosted models through the **LiteLLM gateway**.
 
+Reviewed: 31.10.2025
+
 ---
 
 ## 🔐 Security Configuration
@@ -21,7 +23,7 @@ In addition, you should be **enabled** to use OCI Generative AI Service in your 
 ## 🧩 Demos Included
 
 - [Simple CrewAI Agent](./simple_test_crewai_agent.py) — basic CrewAI agent interacting with an LLM through OCI
-- [OCi Consumption Report](./crew_agent_mcp02.py)
+- [OCI Consumption Report](./crew_agent_mcp02.py)
 - *(More demos to be added soon)*
 
 ---
