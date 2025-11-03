@@ -105,3 +105,5 @@ ENABLE_JWT_TOKEN = False
 ```
 in the config.py file.
 
+## Comparison with LangGraph
+You can find a detailed comparison with LangGraph [here](./crewai-vs-langgraph.md)
